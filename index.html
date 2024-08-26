@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>Filter Lists</title>
+  
+<link rel = "icon" href = "img/1.png" type = "image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+</style>
+</head>
+<body>
+
+   <h1><img src="img/1.png"></h1><br><br>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<br><br>
+<ul id="myUL">
+
+  <li><a href="https://github.com/EngineerAbdulazizIS">Github</a></li>
+  <li><a href="https://engineer-abdulaziz-is.netlify.app/">Engineer Abdulaziz</a></li>
+  <li><a href="https://www.postermywall.com/">postermywall</a></li>
+  <li><a href="https://venngage.com/blog/use-case-diagram-example/">Venngage</a></li>
+  <li><a href="https://miro.com/diagramming/types-of-diagrams/">Miro</a></li>
+  <li><a href="https://www.w3schools.com/">W3schools</a></li>
+  <li><a href="https://www.truelancer.com">Truelancer</a></li>
+  <li><a href="https://qr-code-eng.netlify.app/">QR-Code</a></li>
+  <li><a href="https://abdulazizphp-source.netlify.app/">Source</a></li>
+  
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+   
+</body>
+</html>

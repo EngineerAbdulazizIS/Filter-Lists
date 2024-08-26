@@ -1,0 +1,70 @@
+
+
+body {
+	background: linear-gradient(to top left, #c6d9ec 0%, #6699cc 100%);
+	align-items: center;
+    justify-content: center;
+    float: center;
+    text-align: center;
+	padding: 40px 40px;
+}
+
+
+
+
+#myInput {
+  background-position: 10px 12px;
+  background: #d9e6f2;
+  color: #d9e6f2;
+  width: 80%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #6699cc;
+  margin-bottom: 12px;
+  border-radius: 20px;
+}
+
+#myInput:hover {
+    box-shadow: 2px 2px 4px #c6d9ec,
+  -2px -2px 4px #c6d9ec;
+}
+
+@media screen and (max-width: 600px) {
+  #myInput {
+    width: 100%;
+  }
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 20px 200px 20px 200px;
+  margin: 0;
+  text-align: left;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  #myUL  {
+	padding: 10px 4px 10px 4px;
+  }
+}
+
+#myUL li a {
+  background: linear-gradient(to top, #d9e6f2 0%, #d9e6f2 100%);
+  color:#6699cc;
+  border: 1px solid #6699cc;
+  padding: 12px 20px 12px 40px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  border-radius: 18px;
+  margin-bottom: 6px;
+}
+
+#myUL li a:hover:not(.header) {
+  background: linear-gradient(to top, #79a6d2 0%, #6699cc 100%);
+  color: #d9e6f2;
+  box-shadow: 2px 2px 4px #c6d9ec,
+  -2px -2px 4px #c6d9ec;
+}
